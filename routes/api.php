@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::prefix('/Users')->group(function () {
     Route::controller(UserController::class)->group(function () {
-        Route::get('/Index', 'index')->name('Dashboard.Users.Index');
+        Route::post('/Index', 'index')->name('Dashboard.Users.Index');
         Route::post('/Store', 'store')->name('Dashboard.Users.Store');
         Route::post('/Edit/{id}', 'edit')->name('Dashboard.Users.Edit');
         Route::put('/Update/{id}', 'update')->name('Dashboard.Users.Update');

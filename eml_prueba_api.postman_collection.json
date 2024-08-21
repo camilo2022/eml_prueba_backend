@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "d98b07cd-872b-4344-a9f2-cc2839a951ff",
+		"name": "eml_prueba_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21878930"
+	},
+	"item": [
+		{
+			"name": "Index",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"perPage\": 10,\r\n    \"column\": \"names\",\r\n    \"dir\": \"ASC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://eml_prueba_backend.test/api/Users/Index?page=1",
+					"protocol": "http",
+					"host": [
+						"eml_prueba_backend",
+						"test"
+					],
+					"path": [
+						"api",
+						"Users",
+						"Index"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"names\": \"Camilo Andres\",\r\n    \"last_names\": \"Acacio Gutierrez\",\r\n    \"number_phone\": \"3222759176\",\r\n    \"email\": \"camiloacacio16@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://eml_prueba_backend.test/api/Users/Store",
+					"protocol": "http",
+					"host": [
+						"eml_prueba_backend",
+						"test"
+					],
+					"path": [
+						"api",
+						"Users",
+						"Store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://eml_prueba_backend.test/api/Users/Edit/1",
+					"protocol": "http",
+					"host": [
+						"eml_prueba_backend",
+						"test"
+					],
+					"path": [
+						"api",
+						"Users",
+						"Edit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"names\": \"Camilo Andres\",\r\n    \"last_names\": \"Acacio Gutierrez\",\r\n    \"number_phone\": \"3222759176\",\r\n    \"email\": \"camiloacacio16@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://eml_prueba_backend.test/api/Users/Update/1",
+					"protocol": "http",
+					"host": [
+						"eml_prueba_backend",
+						"test"
+					],
+					"path": [
+						"api",
+						"Users",
+						"Update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://eml_prueba_backend.test/api/Users/Delete",
+					"protocol": "http",
+					"host": [
+						"eml_prueba_backend",
+						"test"
+					],
+					"path": [
+						"api",
+						"Users",
+						"Delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restore",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://eml_prueba_backend.test/api/Users/Restore",
+					"protocol": "http",
+					"host": [
+						"eml_prueba_backend",
+						"test"
+					],
+					"path": [
+						"api",
+						"Users",
+						"Restore"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
